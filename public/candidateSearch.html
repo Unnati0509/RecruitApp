@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="candidateSearch.css">
+</head>
+<body>
+  <nav class="navbar">
+  
+    <div class="navbar-title">
+        <h1>Recruitment Solution</h1>
+    </div>
+</nav>
+    <div class="candidate-search">
+        <h2 class="section-title">Search your Candidate here!</h2>
+        <div class="search-form">
+          <input type="text" id="location-input" placeholder="Location">
+          <input type="text" id="role-input" placeholder="Job Role">
+          <button type="button" id="search-button">Search</button>
+        </div>
+        
+        <div class="candidate-list">
+          <h2 class="list-title">Fetched Candidates<span class="caption">&nbsp;&nbsp;(Evaluate and select your candidate)</span></h2>
+          <ul id="candidate-ul">
+            <!-- Candidate list items will be dynamically added here -->
+          </ul>
+        </div>
+        <div class="ranking-list">
+          <h2 class="list-title">Ranked Candidates<span class="caption">&nbsp;&nbsp;(Add your desired candidate here!)</span></h2>
+          
+          <ul id="ranking-ul">
+            <!-- Ranked candidate list items will be dynamically added here -->
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Add the following script at the end of the body tag -->
+      <script src="script.js"></script>
+      
+</body>
+</html>

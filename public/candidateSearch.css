@@ -1,0 +1,210 @@
+/* Navbar styling */
+*{
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+}
+body{
+  background-color: #cee4fc;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #fefefe;
+  color: #040404;
+  padding: 20px;
+  font-size: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);;
+}
+
+
+.navbar-title h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Additional styling and adjustments as needed */
+
+.candidate-search {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    
+    /* background:  linear-gradient(-45deg, #489aad, #5d8690); */
+    border-radius: 5px;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .caption{
+    font-size: 15px;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-form input {
+    width: 200px;
+    height: 40px;
+    padding: 0 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-form button {
+    height: 40px;
+    padding: 0 20px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .candidate-list {
+    margin-top: 20px;
+  }
+  
+  .list-title {
+    margin-bottom: 10px;
+  }
+ #ranking-ul{
+  list-style: none;
+ }
+  
+  #candidate-ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #candidate-ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 600px) {
+    .search-form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .search-form input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+/* Add the following CSS styles for the candidate cards */
+.candidate-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .candidate-name {
+    margin: 0;
+  }
+  
+  .candidate-role {
+    margin: 5px 0;
+  }
+  
+  .evaluate-button {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+    /* Add the following CSS styles for the skills progress bars */
+.skill {
+    margin-bottom: 10px;
+  }
+  
+  .skill-name {
+    margin-bottom: 5px;
+  }
+  
+  .progress {
+    height: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #0056b3;
+  }
+  
+  /* Adjust the existing CSS styles as needed */
+  
+  /* Add animation keyframes */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  /* Add animation keyframes */
+@keyframes progressBarFill {
+    0% {
+      width: 0;
+    }
+  }
+  
+  /* Apply animations to skill bars */
+  .progress-bar {
+    animation: progressBarFill 1s ease-in-out;
+  }
+  
+  /* Additional styling and adjustments as needed */
+  
+  
+  /* Apply animations to candidate search components */
+  .candidate-list,
+  .ranking-list {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .candidate-card {
+    animation: slideInFromLeft 0.5s ease-in-out;
+  }
+  
+  .ranking-list .candidate-card {
+    animation: slideInFromRight 0.5s ease-in-out;
+  }
+  
+  /* Additional styling and adjustments as needed */
+  

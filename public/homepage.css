@@ -1,0 +1,71 @@
+/* Add background animation */
+body {
+    background:  linear-gradient(-45deg, #6dd5ed, #14191a);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Style the heading and paragraph */
+  h1 {
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    margin-top: 200px;
+    animation: fadeInUp 1s ease;
+  }
+  
+  p {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    animation: fadeInUp 1s ease;
+    animation-delay: 0.5s;
+  }
+  
+  /* Style the button */
+  a.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #fff;
+    color: #040404;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 40px;
+    animation: fadeInUp 1s ease;
+    animation-delay: 1s;
+    /* align-items: center; */
+    margin-left: 44%;
+  }
+  
+  /* Button hover effect */
+  a.button:hover {
+    background-color: #f9d423;
+    color: #fff;
+  }
+  
+  /* Animation for fading in elements */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
